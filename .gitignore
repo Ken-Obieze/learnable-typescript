@@ -1,0 +1,11 @@
+# Dependency directories
+project-root/node_modules/
+
+# Package lock
+project-root/package-lock.json
+
+# Environment variables file
+project-root/.env
+
+# Typescript files
+project-root/build
