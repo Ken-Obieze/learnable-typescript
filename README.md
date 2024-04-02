@@ -47,3 +47,4 @@ npm start
 * joi
 * joi-objectid
 * bcrypt
+* Typescript

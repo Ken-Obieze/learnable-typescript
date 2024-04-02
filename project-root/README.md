@@ -45,47 +45,15 @@ npm start
 * Click on the "Send" button to make the request.
 * Review the response in the Postman interface.
 
-#### Example Queries
-Fetch all room types
-* Method: GET
-* URL (Localhost): http://localhost:3000/api/v1/types
-* URL:(live link): https://learnable-hotel-management-api.onrender.com/api/v1/rooms/types
-
-Create a new room type
-* Method: POST
-* URL (Localhost): http://localhost:3000/api/v1/types
-* URL (live link): https://learnable-hotel-management-api.onrender.com/api/v1/rooms/types
-* Request Body:
-```bash
-{
-    "name": "Standard Room"
-}
-```
-
-Delete a room by ID
-* Method: DELETE
-* URL (localhost): localhost:3000/api/v1/rooms/65f9e733a2c04a41b2fb874f (http://localhost:3000/api/v1/rooms/{roomId})
-* URL (live link): https://learnable-hotel-management-api.onrender.com/api/v1/rooms/65f9e733a2c04a41b2fb874f
-
-### Using CURL
-1. Fetch all room types (GET request):
-
-```bash
-curl -X GET http://localhost:3000/api/v1/types
-```
-
-2. Create a new room type (POST request):
-
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{"name": "Deluxe Room"}' http://localhost:3000/api/v1/rooms-types
-```
-3. Fetch all rooms (GET request):
-
-```bash
-curl -X GET http://localhost:3000/api/v1/rooms
-```
-
-4. Delete a room by ID (DELETE request):
-```bash
-curl -X DELETE http://localhost:3000/api/v1/rooms/65f9e733a2c04a41b2fb874f
-```
+## Endpoints
+### Authentication
+* POST /api/v1/users/register: Register a new user.
+### Rooms
+* POST /api/v1/rooms: Create a new room.
+* GET /api/v1/rooms: Get all rooms.
+* GET /api/v1/rooms/:roomId: Get a room by ID.
+* PATCH /api/v1/rooms/:roomId: Update a room.
+* DELETE /api/v1/rooms/:roomId: Delete a room.
+### Room Types
+* POST /api/v1/roomTypes: Create a new room type.
+* GET /api/v1/roomTypes: Get all room types.
